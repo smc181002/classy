@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,600&display=swap");
+body, * {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 500;
+}
+
+/***background***/
+.bg-info {
+  background: #bed0ff;
+  color: #051C40;
+}
+
+.bg-danger {
+  background: #ff2323;
+  color: white;
+}
+
+.bg-success {
+  background: #13db24;
+  color: white;
+}
+
+.bg-warning {
+  background: #ffd000;
+  color: #000;
+}
+
+.bg-primary {
+  background: #1064ec;
+  color: white;
+}
+
+.bg-dark {
+  background: #454545;
+  color: white;
+}
+
+/***text***/
+.text-info {
+  color: #2727fc;
+}
+
+.text-primary {
+  color: #1064ec;
+}
+
+.text-dark {
+  color: #454545;
+}
+
+.text-light {
+  color: #fefefe;
+}
+
+.text-warning {
+  color: #ffd000;
+}
+
+.text-danger {
+  color: #ff2323;
+}
+
+.text-success {
+  color: #13db24;
+}
+
+/***buttons***/
+button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-info {
+  background: #bed0ff;
+  color: #051C40;
+}
+
+.btn-info:hover, .btn-info:focus {
+  background-color: #a7c0ff;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-primary {
+  background: #1064ec;
+  color: #fff;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #316bff;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-danger {
+  background: #ff2323;
+  color: #fff;
+}
+
+.btn-danger:hover, .btn-danger:focus {
+  background-color: #ff4848;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-dark {
+  background-color: #454545;
+  color: #fff;
+}
+
+.btn-dark:hover, .btn-dark:focus {
+  background-color: #333;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-success {
+  background-color: #13db24;
+  color: #fff;
+}
+
+.btn-success:hover, .btn-success:focus {
+  background-color: #2fc43c;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-warning {
+  background-color: #ffd000;
+  color: #000;
+}
+
+.btn-warning:hover, .btn-warning:focus {
+  background-color: #eeff00;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-disabled {
+  color: #454545;
+  cursor: not-allowed;
+}
+/*# sourceMappingURL=classy.all.css.map */

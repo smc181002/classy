@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600&display=swap');
+
+body, *{
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 500;
+}
+
+$primary: rgb(16, 100, 236);
+$dark: #454545;
+$light: #fefefe;
+$danger: rgb(255, 35, 35);
+$warning: rgb(255, 208, 0);
+$success: rgb(19, 219, 36);
+$info-bg: rgb(190, 208, 255);
+$info-text: #051C40;
+$text-info: rgb(39, 39, 252);
+
+/***background***/
+
+.bg-info{
+  background: $info-bg;
+  color: $info-text;
+}
+
+.bg-danger{
+  background: $danger;
+  color: white;
+}
+
+.bg-success{
+  background: $success;
+  color: white;
+}
+
+.bg-warning{
+  background: $warning;
+  color: #000;
+}
+
+.bg-primary{
+  background: $primary;
+  color: white;
+}
+
+.bg-dark{
+  background: $dark;
+  color: white;
+}
+
+
+/***text***/
+
+.text-info{
+  color: $text-info;
+}
+
+.text-primary{
+  color: $primary;
+}
+
+.text-dark{
+  color: $dark;
+}
+
+.text-light{
+  color: $light;
+}
+
+.text-warning{
+  color: $warning;
+}
+
+.text-danger{
+  color: $danger;
+}
+
+.text-success{
+  color: $success;
+}
+
+
+/***buttons***/
+
+button{
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-info{
+  background: $info-bg;
+  color: $info-text;
+  &:hover, &:focus{
+    background-color: rgb(167, 192, 255);
+    transition: 0.2s ease-in-out;
+  }
+}
+
+.btn-primary{
+  background: $primary;
+  color: #fff;
+  &:hover, &:focus{
+    background-color: rgb(49, 107, 255);
+    transition: 0.2s ease-in-out;
+  }
+}
+
+.btn-danger{
+  background: $danger;
+  color: #fff;
+  &:hover, &:focus{
+    background-color: rgb(255, 72, 72);
+    transition: 0.2s ease-in-out;
+  }
+}
+
+.btn-dark{
+  background-color: $dark;
+  color: #fff;
+  &:hover, &:focus{
+    background-color: #333;
+    transition: 0.2s ease-in-out;
+  }
+}
+
+.btn-success{
+  background-color: $success;
+  color: #fff;
+  &:hover, &:focus{
+    background-color: rgb(47, 196, 60);
+    transition: 0.2s ease-in-out;
+  }
+}
+
+.btn-warning{
+  background-color: $warning;
+  color: #000;
+  &:hover, &:focus{
+    background-color: rgb(238, 255, 0);
+    transition: 0.2s ease-in-out;
+  }
+}
+
+.btn-disabled{
+  color: $dark;
+  cursor: not-allowed;
+}
