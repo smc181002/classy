@@ -1,67 +1,92 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:500,600&display=swap");
+@font-face {
+  font-family: NunitoSans700;
+  src: url("../Nunito_Sans/NunitoSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: Montserrat600;
+  src: url("../Montserrat/Montserrat-Medium.ttf");
+}
+
 body, * {
-  font-family: 'Montserrat', sans-serif !important;
-  font-weight: 500;
+  font-family: Montserrat600;
+}
+
+/***alignments***/
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: left;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 /***background***/
 .bg-info {
-  background: #bed0ff;
-  color: #051C40;
+  background: #bed0ff !important;
+  color: #051C40 !important;
 }
 
 .bg-danger {
-  background: #ff2323;
-  color: white;
+  background: #ff2323 !important;
+  color: white !important;
 }
 
 .bg-success {
-  background: #13db24;
-  color: white;
+  background: #13db24 !important;
+  color: white !important;
 }
 
 .bg-warning {
-  background: #ffd000;
-  color: #000;
+  background: #ffd000 !important;
+  color: #000  !important;
 }
 
 .bg-primary {
-  background: #1064ec;
-  color: white;
+  background: #2c77f0 !important;
+  color: white !important;
 }
 
 .bg-dark {
-  background: #454545;
-  color: white;
+  background: #454545 !important;
+  color: white !important;
 }
 
 /***text***/
 .text-info {
-  color: #2727fc;
+  color: #3737ff !important;
 }
 
 .text-primary {
-  color: #1064ec;
+  color: #2c77f0 !important;
 }
 
 .text-dark {
-  color: #454545;
+  color: #454545 !important;
 }
 
 .text-light {
-  color: #fefefe;
+  color: #fefefe !important;
 }
 
 .text-warning {
-  color: #ffd000;
+  color: #ffd000 !important;
 }
 
 .text-danger {
-  color: #ff2323;
+  color: #ff2323 !important;
 }
 
 .text-success {
-  color: #13db24;
+  color: #13db24 !important;
 }
 
 /***buttons***/
@@ -86,12 +111,12 @@ button {
 }
 
 .btn-primary {
-  background: #1064ec;
+  background: #2c77f0;
   color: #fff;
 }
 
 .btn-primary:hover, .btn-primary:focus {
-  background-color: #316bff;
+  background-color: #0f53ff;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
@@ -135,7 +160,7 @@ button {
 }
 
 .btn-warning:hover, .btn-warning:focus {
-  background-color: #eeff00;
+  background-color: #f4f800;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
@@ -143,5 +168,72 @@ button {
 .btn-disabled {
   color: #454545;
   cursor: not-allowed;
+}
+
+/***containers****/
+.res-container {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 0;
+}
+
+.long-container {
+  margin: 0;
+}
+
+.classify {
+  background: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  color: #454545;
+  margin: 30px 0;
+}
+
+@media screen and (min-width: 280px) {
+  .res-container, .long-container {
+    padding: 5px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .res-container, .long-container {
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .res-container, .long-container {
+    padding: 15px;
+  }
+  .res-container {
+    width: 90vw;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .res-container, .long-container {
+    padding: 25px;
+  }
+  .res-container {
+    width: 85vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .res-container, .long-container {
+    padding: 35px;
+  }
+  .res-container {
+    width: 75vw;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .res-container, .long-container {
+    width: 80vw;
+    padding: 35px;
+  }
 }
 /*# sourceMappingURL=classy.all.css.map */

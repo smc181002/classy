@@ -1,11 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Montserrat:500,600&display=swap');
 
-body, *{
-  font-family: 'Montserrat', sans-serif !important;
-  font-weight: 500;
+@font-face {
+  font-family: NunitoSans700;
+  src: url('../Nunito_Sans/NunitoSans-SemiBold.ttf');
 }
 
-$primary: rgb(16, 100, 236);
+@font-face {
+  font-family: Montserrat600;
+  src: url('../Montserrat/Montserrat-Medium.ttf');
+}
+
+body, *{
+  font-family: Montserrat600;
+}
+
+$primary: rgb(44, 119, 240);
 $dark: #454545;
 $light: #fefefe;
 $danger: rgb(255, 35, 35);
@@ -13,69 +22,86 @@ $warning: rgb(255, 208, 0);
 $success: rgb(19, 219, 36);
 $info-bg: rgb(190, 208, 255);
 $info-text: #051C40;
-$text-info: rgb(39, 39, 252);
+$text-info: rgb(55, 55, 255);
+
+/***alignments***/
+.text-center{
+  text-align: center;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.text-center{
+  text-align: left;
+}
+
+.text-justify{
+  text-align: justify;
+}
 
 /***background***/
 
 .bg-info{
-  background: $info-bg;
-  color: $info-text;
+  background: $info-bg !important;
+  color: $info-text !important;
 }
 
 .bg-danger{
-  background: $danger;
-  color: white;
+  background: $danger !important;
+  color: white !important;
 }
 
 .bg-success{
-  background: $success;
-  color: white;
+  background: $success !important;
+  color: white !important;
 }
 
 .bg-warning{
-  background: $warning;
-  color: #000;
+  background: $warning  !important;
+  color: #000  !important;
 }
 
 .bg-primary{
-  background: $primary;
-  color: white;
+  background: $primary  !important;
+  color: white !important;
 }
 
 .bg-dark{
-  background: $dark;
-  color: white;
+  background: $dark !important;
+  color: white !important;
 }
 
 
 /***text***/
 
 .text-info{
-  color: $text-info;
+  color: $text-info !important;
 }
 
 .text-primary{
-  color: $primary;
+  color: $primary !important;
 }
 
 .text-dark{
-  color: $dark;
+  color: $dark !important;
 }
 
 .text-light{
-  color: $light;
+  color: $light !important;
 }
 
 .text-warning{
-  color: $warning;
+  color: $warning !important;
 }
 
 .text-danger{
-  color: $danger;
+  color: $danger !important;
 }
 
 .text-success{
-  color: $success;
+  color: $success !important;
 }
 
 
@@ -100,10 +126,10 @@ button{
 }
 
 .btn-primary{
-  background: $primary;
+  background: $primary ;
   color: #fff;
   &:hover, &:focus{
-    background-color: rgb(49, 107, 255);
+    background-color: rgb(15, 83, 255);
     transition: 0.2s ease-in-out;
   }
 }
@@ -139,7 +165,7 @@ button{
   background-color: $warning;
   color: #000;
   &:hover, &:focus{
-    background-color: rgb(238, 255, 0);
+    background-color: rgb(244, 248, 0);
     transition: 0.2s ease-in-out;
   }
 }
@@ -147,4 +173,71 @@ button{
 .btn-disabled{
   color: $dark;
   cursor: not-allowed;
+}
+
+/***containers****/
+
+.res-container{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+}
+
+.long-container{
+  margin: 0;
+}
+
+.classify{
+  background: #fff;
+  border:1px solid #e1e1e1;
+  border-radius: 5px;;
+  color: $dark;
+  margin: 30px 0;
+}
+
+@media screen and (min-width:280px){
+  .res-container, .long-container{
+    padding: 5px;
+  }
+}
+
+@media screen and (min-width:320px){
+  .res-container, .long-container{
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width:375px){
+  .res-container, .long-container{
+    padding: 15px;
+  }
+  .res-container{
+    width: 90vw;
+  }
+}
+
+@media screen and (min-width:425px){
+  .res-container, .long-container{
+    padding: 25px;
+  }
+  .res-container{
+    width: 85vw;
+  }
+}
+
+@media screen and (min-width:768px){
+  .res-container, .long-container{
+    padding: 35px;
+  }
+  .res-container{
+    width: 75vw;
+  }
+}
+
+@media screen and (min-width:1120px){
+  .res-container, .long-container{
+    width: 80vw;
+    padding: 35px;
+  }
 }
